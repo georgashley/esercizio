@@ -103,19 +103,21 @@
         </div>
     </section>
 
-    <form action="https://app.getresponse.com/add_subscriber.html" method="post" accept-charset="UFT-8">
-        <!-- Nome utente -->
+    <!-- Inizio del modulo GetResponse -->
+    <form action="https://app.getresponse.com/add_contact.html" method="post" accept-charset= "UFT-8">
+        
+        <!-- Campo per il Nome -->
         <label for="name">Nome:</label>
         <input type="text" id="name" name="name" required>
 
-        <!-- Email utente -->
+        <!-- Campo per l'Email -->
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
         <!-- Token della lista (campo nascosto) -->
-        <input type="hidden" name="campaign_token" value="ZSgoB">
-        <input type="hidden" name="start_day" value= "ZSgoB">
-        <!-- Aggiungi altri campi come desiderato -->
+        <input type="hidden" name="campaign_token" value="ZSgoB"> <!-- Sostituisci "xooox" con il tuo vero token -->
+        <input type="hidden" name="start_day" value="0">
+        
         <!-- Pulsante di invio -->
         <button type="submit">Iscriviti</button>
     </form>
