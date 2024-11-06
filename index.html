@@ -103,7 +103,28 @@
         </div>
     </section>
 
-    <!-- Registration Form -->
+    <form action="https://app.getresponse.com/add_contact.html" method="post">
+        <!-- Nome utente -->
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email utente -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Token della lista (campo nascosto) -->
+        <input type="hidden" name="campaign_token" value="xooox">
+        
+        <!-- Aggiungi altri campi come desiderato -->
+        
+        <!-- Pulsante di invio -->
+        <button type="submit">Iscriviti</button>
+    </form>
+    <!-- Fine del modulo GetResponse -->
+
+    <p>Grazie per la tua iscrizione!</p>
+    
+    <!--
     <section class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow">
@@ -149,7 +170,7 @@
             </div>
         </div>
     </section>
-
+-->
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
