@@ -14,9 +14,9 @@
             <div class="text-center">
                 <h1 class="text-5xl font-bold mb-4">SpeakEasy English</h1>
                 <p class="text-2xl mb-8">Impara l'inglese con insegnanti madrelingua, quando e dove vuoi</p>
-                <div class="bg-yellow-400 text-blue-900 py-2 px-4 rounded-full inline-block font-bold mb-8">
+                <a href="#subscription-form" class="bg-yellow-400 text-blue-900 py-3 px-6 rounded-full inline-block font-bold hover:bg-yellow-300 transition">
                     PROVA GRATUITA DI 1 MESE
-                </div>
+                </a>
             </div>
         </div>
     </header>
@@ -24,18 +24,18 @@
     <!-- Features Section -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
                     <i class="fas fa-globe text-4xl text-blue-600 mb-4"></i>
                     <h3 class="text-xl font-bold mb-2">Insegnanti Madrelingua</h3>
                     <p>Lezioni con esperti qualificati che ti aiuteranno a perfezionare pronuncia e comprensione</p>
                 </div>
-                <div class="text-center">
+                <div>
                     <i class="fas fa-laptop text-4xl text-blue-600 mb-4"></i>
                     <h3 class="text-xl font-bold mb-2">Flessibilità Totale</h3>
                     <p>Studia online quando preferisci, con materiali scaricabili e lezioni on-demand</p>
                 </div>
-                <div class="text-center">
+                <div>
                     <i class="fas fa-euro-sign text-4xl text-blue-600 mb-4"></i>
                     <h3 class="text-xl font-bold mb-2">Prezzo Accessibile</h3>
                     <p>Solo €14,90 al mese per accedere a tutti i contenuti e le lezioni</p>
@@ -103,73 +103,25 @@
         </div>
     </section>
 
-<!-- Inizio del modulo GetResponse -->
-    <form action="https://app.getresponse.com/add_subscriber.html" method="POST" accept-charset="utf-8">
-        <div class="grid md:grid-cols-2 gap-4">
-            <div>
-                <label class="block text-gray-700 mb-2">Nome</label>
-                <input type="text" class="w-full p-2 border rounded" required>
-            </div>
-            <div>
-                <label class="block text-gray-700 mb-2">Email</label>
-                <input type="email" class="w-full p-2 border rounded" required>
-            </div>
-         </div>
-                <!-- Token della lista (campo nascosto) -->
-        <input type="hidden" name="campaign_token" value="ZSgoB"> <!-- Sostituisci "xooox" con il tuo vero token -->
-        <input type="hidden" name="start_day" value="0">
-        
-        <!-- Pulsante di invio -->
-        <div class="text-center">
-                <button type="submit" class="bg-blue-600 text-white py-3 px-8 rounded-full font-bold hover:bg-blue-700 transition duration-300">
-                            Iscriviti
-                </button>
-        </div>
-    <!-- Fine del modulo GetResponse -->
-
-    <p>Grazie per la tua iscrizione!</p>
-
-
-   <!--
-    <section class="py-16 bg-gray-100">
+    <!-- Subscription Form -->
+    <section id="subscription-form" class="py-16 bg-blue-50">
         <div class="container mx-auto px-4">
             <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow">
                 <h2 class="text-3xl font-bold text-center mb-8">Inizia Ora la Tua Prova Gratuita</h2>
-                <form class="space-y-4">
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-gray-700 mb-2">Nome</label>
-                            <input type="text" class="w-full p-2 border rounded" required>
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 mb-2">Cognome</label>
-                            <input type="text" class="w-full p-2 border rounded" required>
-                        </div>
+                <form action="https://app.getresponse.com/add_subscriber.html" method="POST" class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Nome</label>
+                        <input type="text" name="name" class="w-full p-3 border rounded" required>
                     </div>
                     <div>
                         <label class="block text-gray-700 mb-2">Email</label>
-                        <input type="email" class="w-full p-2 border rounded" required>
+                        <input type="email" name="email" class="w-full p-3 border rounded" required>
                     </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Telefono</label>
-                        <input type="tel" class="w-full p-2 border rounded" required>
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Età</label>
-                        <input type="number" class="w-full p-2 border rounded" required>
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">Livello di Inglese Attuale</label>
-                        <select class="w-full p-2 border rounded" required>
-                            <option>Principiante</option>
-                            <option>Elementare</option>
-                            <option>Intermedio</option>
-                            <option>Avanzato</option>
-                        </select>
-                    </div>
+                    <input type="hidden" name="campaign_token" value="ZSgoB">
+                    <input type="hidden" name="start_day" value="0">
                     <div class="text-center">
                         <button type="submit" class="bg-blue-600 text-white py-3 px-8 rounded-full font-bold hover:bg-blue-700 transition duration-300">
-                            INIZIA LA PROVA GRATUITA
+                            ISCRIVITI
                         </button>
                     </div>
                 </form>
@@ -177,15 +129,14 @@
         </div>
     </section>
 
-    
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
             <p>© 2024 SpeakEasy English. Tutti i diritti riservati.</p>
-            <div class="mt-4">
-                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
-                <a href="#" class="text-gray-400 hover:text-white mx-2">Termini e Condizioni</a>
-                <a href="#" class="text-gray-400 hover:text-white mx-2">Contattaci</a>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white">Termini e Condizioni</a>
+                <a href="#" class="text-gray-400 hover:text-white">Contattaci</a>
             </div>
         </div>
     </footer>
